@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <header>
+        <!--logo-->
+      <a href="Index.html" class="logo">
+           <img src="Recursos_Plataforma/InterfazHome/HeaderWebUniversae.png" alt="">
+      </a>
+    </header>
+    <main class="frame">
+        <iframe class="juego" scrolling="no" allowfullscreen="" frameborder="0" src="https://html-classic.itch.zone/html/8561483/index.html"></iframe>
+    </main>
+    <section class="simulador">
+        <div class="left column">
+            <h3>Mantenimiento de los equipos y herramientas de extinción de incendios forestales.</h3>
+            <p>Grado: Coordinación de emergencias y protección civil.</p>
+            <p>Asignatura: Gestión de recursos de emergencias y protección civil</p>
+            <p>Unidad: Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones.</p>
+            <p>Descripción: En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales.</p>
+            <p>Duración aproximada: 10 minutos</p>
+            <p>Nivel de dificutlad: Fácil</p>
+        </div>
+        <!--imagenes en lightbox-->
+        <div class="right column">
+            <div class="row">
+                <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque0.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="row">
+                <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque1.png" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="row">
+                <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque2.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="row">
+                <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque3.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="row">
+                  <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque4.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+        </div>
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque0.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque1.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque2.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque3.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="Recursos_Plataforma/InterfazGame/Miniaturas/Embarque/Embarque4.png" style="width:100%">
+      </div>
+        
+             <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)"><img src="/Recursos_Plataforma/InterfazGame/Flecha izquierda.png" alt=""></a>
+            <a class="next" onclick="plusSlides(1)"><img src="/Recursos_Plataforma/InterfazGame/Flecha derecha.png" alt=""></a>
+    </section>
+    <footer>
+        <!--enlaces RRSS-->
+        <div class=" footer container">
+            <ul>
+                <li><a href="https://www.facebook.com/UNIVERSAE/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/_universae/?hl=es"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/c/UNIVERSAE_FP"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://www.youtube.com/c/UNIVERSAE_FP"><i class="fa fa-twitch"></i></a></li>
+                <li><a href="https://www.linkedin.com/school/universae"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.tiktok.com/@_universae"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://twitter.com/_Universae"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://universae.com"><i class="fa fa-google"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
