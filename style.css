@@ -100,4 +100,7 @@ footer ul li a {
       flex-direction: column;
       flex-wrap: nowrap;
     }
+    .footer ul li a {
+        font-size: 20px;
+    }
 }
