@@ -1,11 +1,15 @@
 // Abrir modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.querySelector("header").style.position = "static";
 }
 
 // Cerrar modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  document.body.style.overflow = "";
+  document.querySelector("header").style.position = "";
 }
 
 let slideIndex = 1;
@@ -21,6 +25,8 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
   }
 
+
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -31,3 +37,6 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }  slides[slideIndex-1].style.display = "block";
 }
+
+
+

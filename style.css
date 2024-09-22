@@ -66,6 +66,7 @@ header {
 
 
 footer {
+    position: relative;
     background-color: #134c8f;
     color:#ffffff;
     font-weight: 400;
@@ -75,7 +76,8 @@ footer {
     height:60px;
     width: 100%;
     bottom: 0;
-    padding: 20px;
+    margin:auto;
+    padding:0;
 }
 
 footer ul li  {
@@ -97,5 +99,8 @@ footer ul li a {
     .container {
       flex-direction: column;
       flex-wrap: nowrap;
+    }
+    .footer ul li a {
+        font-size: 20px;
     }
 }
